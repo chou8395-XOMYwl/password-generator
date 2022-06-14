@@ -44,4 +44,3 @@ var generatePassword = function () {
       console.log("Special characters included = " + SpecialConfirm);
   }
 }
-  
