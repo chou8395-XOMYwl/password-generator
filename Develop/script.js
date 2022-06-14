@@ -13,8 +13,8 @@ generateBtn.addEventListener("click", writePassword);
 
 //Beginning of function
 var pswdLength;
-var LowerConfirm;
-var UpperConfirm;
+var LowerCaseConfirm;
+var UpperCaseConfirm;
 var NumberConfirm;
 var SpecialConfirm;
 var generatePassword = function () {
@@ -34,9 +34,14 @@ var generatePassword = function () {
   }
 
   else {
-    LowerConfirm = confirm("Would you like your password to include lower case letters?");
-      console.log("Lower case value = " + LowerConfirm);
-
+    LowerCaseConfirm = confirm("Would you like your password to include lower case letters?");
+      console.log("Lower case included = " + LowerCaseConfirm);
+    UpperCaseConfirm = confirm("Would you like your password to include upper case letters?");
+      console.log("Upper case included = " + UpperCaseConfirm);
+    NumberConfirm = confirm("Would you like your password to contain numbers?");
+      console.log("Numbers inluded = " + NumberConfirm);
+    SpecialConfirm = confirm("Would you like your password to contatin special characters?");
+      console.log("Special characters included = " + SpecialConfirm);
   }
 }
   
